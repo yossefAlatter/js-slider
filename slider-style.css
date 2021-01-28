@@ -1,0 +1,205 @@
+/** reset style for all elemnts **/
+/** start **/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/** end **/
+
+/** declare color variable **/
+/** start **/
+:root{
+    --bgColor: #fdffb6bd;
+    --textColor: #de3b1ec2;
+}
+/** end **/
+
+/** myslider style **/
+/** start **/
+.myslider{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bgColor);
+}
+/** end **/
+
+/** slider title style **/
+/** start **/
+.slider-title{
+    margin-bottom: 100px;
+    font-family:  'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    color: var(--textColor);
+    
+}
+/** end **/
+
+/** slider title media **/
+/** start **/
+@media screen and (max-width: 680px){
+    .slider-title{
+        margin-bottom: 70px;
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width: 580px){
+    .slider-title{
+        margin-bottom: 40px;
+    }
+}
+/** end **/
+
+/** slider-con style **/
+/** start **/
+.slider-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/** end **/
+
+/** slider-con media **/
+/** start **/
+@media screen and (max-width: 680px){
+    .slider-con{
+        transform: scale(0.9);
+    }
+}
+@media screen and (max-width: 580px){
+    .slider-con{
+        transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 480px){
+    .slider-con{
+        transform: scale(0.7);
+    }
+}
+@media screen and (max-width: 380px){
+    .slider-con{
+        transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 280px){
+    .slider-con{
+        transform: scale(0.5);
+    }
+}
+/** end **/
+
+/** sliders parts style **/
+/** start **/
+.left-side{
+    max-width: 515px;
+    display: flex;
+    overflow: hidden;
+    direction: rtl;
+    height: 320px;
+}
+.create-place{
+    display: flex;
+    align-items: center;
+}
+.center-show{
+    margin-right: 150px;
+    margin-left: 150px;
+    transition: all 0.2s;
+}
+.right-side{
+    max-width: 515px;
+    display: flex;
+    overflow: hidden;
+    height: 320px;
+}
+.right-side .create-place{
+    flex-direction: row-reverse;
+}
+/** end **/
+
+/** slider-slides style **/
+/** start **/
+.slider-slide{
+    width: 200px;
+    height: 300px;
+    background-color: #ffeebb;
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px #000000db;
+    transition: all 0.5s;
+}
+.slider-slide .img-con {
+    overflow: hidden;
+    height: 80%;
+}
+.slider-slide .img-con img{
+    width: 100%;
+    height: 100%;
+}
+.slider-slide .name-con{
+    background-color:  #ffeebb;
+    height: 20%;
+    text-transform: capitalize;
+    color: var(--textColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family:  'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+.slider-slide.active{
+    margin: 0;
+    border-radius: 50%;
+    transform: scale(2.1,1.5);
+    animation-name: moveTonext;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/** end **/
+
+/** slider-navigation-btns style **/
+/** start **/
+.slider-navigation-btns{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-navigation-btns button{
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--textColor);
+    cursor: pointer;
+}
+.slider-navigation-btns button:hover{
+    transition: 0.3s;
+    opacity: 0.7;
+}
+/** end **/
+
+/** slider-navigation-btns media **/
+/** start **/
+@media screen and (max-width: 680px){
+    .slider-navigation-btns{
+        margin-top: 70px;
+    }
+}
+@media screen and (max-width: 580px){
+    .slider-navigation-btns{
+        margin-top: 40px;
+    }
+}
+/** end **/
