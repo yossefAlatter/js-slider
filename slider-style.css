@@ -164,6 +164,13 @@
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+}
+.slider-slide.active .img-con{
+    height: 100% !important;
+    width: 50% !important;
+    margin-right: 8px;
 }
 /** end **/
 
